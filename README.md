@@ -10,5 +10,5 @@ Implementation: 4 hours -
 Testing: 2 hours 
 
 # NOTE: 
-Add link web as extra information in ListView because sometimes images are not shown in DetailView using WebView (JSON parsing is correct but Intent retrieve is failed sometimes). 
+Add link web as extra information in ListView because some images are not shown in DetailView using WebView (JSON parsing is correct but Intent retrieve is failed sometimes). 
 
