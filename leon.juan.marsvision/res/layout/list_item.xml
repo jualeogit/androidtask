@@ -1,42 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <!-- Name Label -->
 
     <TextView
         android:id="@+id/date"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_toStartOf="@+id/name"
-        android:padding="20dip" />
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="#DF5C25"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Email label -->
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_toStartOf="@+id/img"
-        android:padding="40dip" />
+        android:paddingBottom="2dip"
+        android:textColor="#D10A0A" />
 
-    <LinearLayout
-        android:id="@+id/thumbnail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="5dip"
-        android:padding="3dip" >
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_gravity="right"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo" />
 
-        <ImageView
-            android:id="@+id/image_view"
-            android:layout_width="50dip"
-            android:layout_height="50dip"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/logo" />
-    </LinearLayout>
+    <!-- Mobile number label -->
 
     <TextView
         android:id="@+id/img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="60dip" />
+        android:gravity="left"
+        android:textColor="#6A6A6A"
+        android:textSize="10sp"
+        android:textStyle="bold" />
 
-</RelativeLayout>
+</LinearLayout>
