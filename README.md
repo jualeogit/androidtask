@@ -1,0 +1,13 @@
+# Mars Vision
+
+Android app which shows a list of images from NASA Mars Rover using JSON parsing.
+
+# Estimated Time
+
+Analysis: 1 hour
+Design: 1 hour
+Implementation: 4 hours
+Testing: 2 hours
+
+
+
